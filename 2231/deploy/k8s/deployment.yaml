@@ -28,6 +28,8 @@ spec:
         instance: api-tester-2231
         version: 1.0.0
     spec:
+      nodeSelector:
+        kubernetes.io/hostname: k8s-node2
       containers:
         - name: api-tester-2231
           image: 1pro/api-tester:1.0.0
